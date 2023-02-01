@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Art/Back_Grid.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/MainView.cs" type="Script" id=2]
+
+[node name="MainView" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1061.0
+margin_bottom = 1101.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="SubGrid" type="TextureRect" parent="."]
+self_modulate = Color( 0.137255, 0.631373, 0.227451, 1 )
+margin_left = 456.0
+margin_top = 36.0
+margin_right = 911.0
+margin_bottom = 177.0
+texture = ExtResource( 1 )
+stretch_mode = 2
+flip_h = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="MainGrid" type="TextureRect" parent="."]
+self_modulate = Color( 0.811765, 0.415686, 0.905882, 1 )
+margin_left = 7.0
+margin_top = 8.0
+margin_right = 430.0
+margin_bottom = 949.0
+rect_clip_content = true
+texture = ExtResource( 1 )
+stretch_mode = 2
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TurnTimer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[node name="QuarterTurnTimer" type="Timer" parent="."]
+wait_time = 0.01
+[connection signal="timeout" from="TurnTimer" to="." method="CalledEveryTurn"]
+[connection signal="timeout" from="QuarterTurnTimer" to="." method="CalledEveryQuarterTurn"]

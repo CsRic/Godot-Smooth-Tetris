@@ -1,0 +1,6 @@
+F:\Godot Engine Projects\Tetris\.mono\temp\bin\Release\Tetris.dll
+F:\Godot Engine Projects\Tetris\.mono\temp\bin\Release\Tetris.pdb
+F:\Godot Engine Projects\Tetris\.mono\temp\obj\Release\Tetris.csprojAssemblyReference.cache
+F:\Godot Engine Projects\Tetris\.mono\temp\obj\Release\Tetris.csproj.CoreCompileInputs.cache
+F:\Godot Engine Projects\Tetris\.mono\temp\obj\Release\Tetris.dll
+F:\Godot Engine Projects\Tetris\.mono\temp\obj\Release\Tetris.pdb
